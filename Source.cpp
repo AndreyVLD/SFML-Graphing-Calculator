@@ -22,7 +22,7 @@ struct v2int
 
 RenderWindow window(VideoMode(1300, 800), "Graphing Calculator", Style::Default);
 
-//valori window
+//values for window
 void valsw()
 {
     latime = window.getSize().y;
@@ -40,7 +40,7 @@ int main()
     window.setFramerateLimit(30);
     window.setPosition(Vector2i(0, 0));
 
-    //obiecte
+    //objects
     VertexArray pct(Points, 1);
     VertexArray pc2(Lines, 2);
     VertexArray Ox(Quads, 4);
@@ -74,7 +74,7 @@ int main()
     sele.setFillColor(Color(165, 206, 230, 255));
     sele.setPosition(0, 0);
 
-    //font and text
+    //fonts and text
     Font font;
     if (!font.loadFromFile("Resources/Fonts/arial.ttf"))
         return -1;
